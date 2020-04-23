@@ -5,8 +5,9 @@ public class Car {
     public final String producent;
     public final double engineCapacity;
     public String color;
+    public Double value;
 
-    public Car(String model, String producent, double engineCapacity) {
+    public Car(String model, String producent, Double engineCapacity) {
         this.model = model;
         this.producent = producent;
         this.engineCapacity = engineCapacity;
@@ -15,7 +16,7 @@ public class Car {
     }
 
     void wypisz() {
-        System.out.println(model + " " + producent + " " + engineCapacity);
+        System.out.println(model + " " + producent + " " + engineCapacity + " " + value);
     }
 }
 

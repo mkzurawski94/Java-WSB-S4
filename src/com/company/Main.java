@@ -6,41 +6,14 @@ public class Main {
         Human me = new Human();
         me.name = "Mateusz";
         me.lastName = "Zurawski";
-        me.pet = new Animal("mouse");
-        me.pet.name = "Cygan";
-//        System.out.println(me.pet.name);
-//        System.out.println(me.pet.species);
-//
-//        Animal azor = new Animal("dog");
-//        azor.name = "Brygida";
-//        System.out.println(azor.species);
-//        me.pet = azor;
-//        System.out.println(me.pet.name);
-//
-//        me.pet.takeForWalk();
-//        me.pet.takeForWalk();
-//        me.pet.takeForWalk();
-//        me.pet.takeForWalk();
-//        me.pet.feed();
-//        me.pet.feed();
-//        me.pet.feed();
-//        me.pet.feed();
-//        me.pet.takeForWalk();
-//        me.pet.takeForWalk();
-//        me.pet.takeForWalk();
-//        me.pet.takeForWalk();
-//        me.pet.takeForWalk();
-//        me.pet.takeForWalk();
-//        me.pet.feed();
 
+        Car fura = new Car("Fiat", "Lupo", 1.2);
+        fura.value = 30000.0;
 
-//        Car fura = new Car("e46", "bmw", 2.0);
-//        me.car = fura;
-//        me.car.wypisz();
+        me.setSalary(9000.0);
 
-        me.getSalary();
-        me.setSalary(0000.0);
-        me.getSalary();
+        me.setCar(fura);
+        me.getCar();
 
 
     }
