@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Human me = new Human();
         me.name = "Mateusz";
-        me.lastName = "Zurawski";
+        me.lastName = "Zurawskii";
 
         Car fura = new Car("Fiat", "Lupo", 1.2);
         fura.value = 30000.0;
