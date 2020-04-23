@@ -6,7 +6,7 @@ public class Human {
     public Double weight;
     protected Phone phone;
     public Animal pet;
-
+    public Car car;
 }
 
 
