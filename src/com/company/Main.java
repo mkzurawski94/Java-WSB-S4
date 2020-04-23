@@ -34,9 +34,15 @@ public class Main {
 //        me.pet.feed();
 
 
-        Car fura = new Car("e46", "bmw", 2.0);
-        me.car = fura;
-        System.out.println(me.car.model + me.car.producent + me.car.engineCapacity);
+//        Car fura = new Car("e46", "bmw", 2.0);
+//        me.car = fura;
+//        me.car.wypisz();
+
+        me.getSalary();
+        me.setSalary(0000.0);
+        me.getSalary();
+
+
     }
 }
 

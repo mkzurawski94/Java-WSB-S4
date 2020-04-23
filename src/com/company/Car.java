@@ -11,5 +11,11 @@ public class Car {
         this.producent = producent;
         this.engineCapacity = engineCapacity;
 
+
+    }
+
+    void wypisz() {
+        System.out.println(model + " " + producent + " " + engineCapacity);
     }
 }
+
