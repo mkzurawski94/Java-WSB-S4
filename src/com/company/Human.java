@@ -19,16 +19,16 @@ public class Human {
 
     Car setCar(Car car) {
         if (salary > car.value) {
-            System.out.println("Rich man, you buy this car by cash");
+            System.out.println("Rich man, you buy this car by cash ");
             this.car = car;
 
 
         } else if (salary > (car.value / 12)) {
-            System.out.println("You can buy this car with credit.");
+            System.out.println("You can buy this car with credit. ");
             this.car = car;
 
         } else {
-            System.out.println("Change job you poor man or go by foot everywhere");
+            System.out.println("Change job you poor man or go by foot everywhere ");
 
 
         }
