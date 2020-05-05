@@ -1,7 +1,7 @@
 package com.company;
 
-import java.time.format.DateTimeFormatter;
-import java.time.LocalDateTime;
+import device.Car;
+import device.Phone;
 
 public class Human {
     public String name;
@@ -61,6 +61,18 @@ public class Human {
     }
 
 
+    @Override
+    public java.lang.String toString() {
+        return "Human{" +
+                "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", weight=" + weight +
+                ", phone=" + phone +
+                ", pet=" + pet +
+                ", car=" + car +
+                ", salary=" + salary +
+                '}';
+    }
 }
 
 

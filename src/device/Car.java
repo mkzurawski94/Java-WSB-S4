@@ -1,4 +1,4 @@
-package com.company;
+package device;
 
 public class Car {
     public final String model;
@@ -18,5 +18,18 @@ public class Car {
     void wypisz() {
         System.out.println(model + " " + producent + " " + engineCapacity + " " + value);
     }
+
+
+    @Override
+    public java.lang.String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", producent='" + producent + '\'' +
+                ", engineCapacity=" + engineCapacity +
+                ", color='" + color + '\'' +
+                ", value=" + value +
+                '}';
+    }
+
 }
 

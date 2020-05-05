@@ -49,5 +49,14 @@ public class Animal {
         }
     }
 
+    @Override
+    public java.lang.String toString() {
+        return "Animal{" +
+                "species='" + species + '\'' +
+                ", name='" + name + '\'' +
+                ", weight=" + weight +
+                ", pic=" + pic +
+                '}';
+    }
 }
 
