@@ -1,9 +1,23 @@
 package device;
 
-public class Phone {
-    public String producer;
-    public String model;
+public class Phone extends Device {
     public Double screenSize;
+
+    public Phone() {
+
+    }
+
+    public Phone(String producer, String model, Double screenSize) {
+        super(producer, model);
+        this.screenSize = screenSize;
+
+
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("beeep-beeep-beeep");
+    }
 
     @Override
     public java.lang.String toString() {

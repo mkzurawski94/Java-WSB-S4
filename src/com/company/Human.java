@@ -1,6 +1,7 @@
 package com.company;
 
 import device.Car;
+import device.Device;
 import device.Phone;
 
 public class Human {
@@ -13,7 +14,7 @@ public class Human {
     private Double salary = 2000.0;
 
     public Car getCar() {
-        System.out.println(name + " " + lastName + " have: " + car.model + " " + car.producent);
+        System.out.println(name + " " + lastName + " have: " + car.model + " " + car.producer);
         return car;
     }
 

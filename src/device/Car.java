@@ -1,22 +1,29 @@
 package device;
 
-public class Car {
-    public final String model;
-    public final String producent;
-    public final double engineCapacity;
+import java.util.jar.JarOutputStream;
+
+public class Car extends Device {
+    public double engineCapacity;
     public String color;
     public Double value;
 
-    public Car(String model, String producent, Double engineCapacity) {
-        this.model = model;
-        this.producent = producent;
-        this.engineCapacity = engineCapacity;
-
+    public Car() {
 
     }
 
+    public Car(String producer, String model, Double engineCapacity) {
+        super(producer, model);
+        this.engineCapacity = engineCapacity;
+
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("brum brum");
+    }
+
     void wypisz() {
-        System.out.println(model + " " + producent + " " + engineCapacity + " " + value);
+        System.out.println(model + " " + producer + " " + engineCapacity + " " + value);
     }
 
 
@@ -24,10 +31,11 @@ public class Car {
     public java.lang.String toString() {
         return "Car{" +
                 "model='" + model + '\'' +
-                ", producent='" + producent + '\'' +
+                ", producent='" + producer + '\'' +
                 ", engineCapacity=" + engineCapacity +
                 ", color='" + color + '\'' +
                 ", value=" + value +
+                ", year of production=" + yearOfProduction +
                 '}';
     }
 
