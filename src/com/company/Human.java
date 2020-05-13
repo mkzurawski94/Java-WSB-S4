@@ -4,14 +4,21 @@ import device.Car;
 import device.Device;
 import device.Phone;
 
-public class Human {
+public class Human implements Salleable {
     public String name;
     public String lastName;
     public Double weight;
-    protected Phone phone;
+    public Phone phone;
     public Animal pet;
-    private Car car;
+    public Car car;
     private Double salary = 2000.0;
+    public Double cash;
+
+    public Human(String name, String lastName, Double cash) {
+        this.lastName = lastName;
+        this.name = name;
+        this.cash = cash;
+    }
 
     public Car getCar() {
         System.out.println(name + " " + lastName + " have: " + car.model + " " + car.producer);
@@ -34,6 +41,13 @@ public class Human {
 
         }
         return car;
+    }
+
+    @Override
+    public void sell(Human buyer, Human seller, Double price) {
+        System.out.println("Cant sell human");
+
+
     }
 
     Double getSalary() {

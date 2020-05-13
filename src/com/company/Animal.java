@@ -2,11 +2,12 @@ package com.company;
 
 import java.io.File;
 
-public class Animal {
+public class Animal implements Salleable {
     public final String species;
     public String name;
     private Double weight;
     File pic;
+    public Human owner;
 
     public static final Double DEFAULT_DOG_WEIGHT = 5.0;
     public static final Double DEFAULT_LION_WEIGHT = 50.0;
@@ -27,6 +28,24 @@ public class Animal {
                 break;
 
         }
+    }
+
+    @Override
+    public void sell(Human buyer, Human seller, Double price) {
+        if (seller.pet != null) {
+            if (buyer.cash >= price) {
+                buyer.pet = seller.pet;
+                buyer.cash -= price;
+                seller.cash += price;
+                owner = buyer;
+                seller.pet = null;
+                System.out.println("Animal friend is sold");
+            } else
+                System.out.println("Not enought money sir");
+        } else
+            System.out.println("Human dont have animal");
+
+
     }
 
     void feed() {
